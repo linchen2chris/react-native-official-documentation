@@ -1,18 +1,8 @@
-import {
-  createBottomTabNavigator,
-  createDrawerNavigator
-} from 'react-navigation';
-
-import GetStarted from '../screens/Basics/01-GetStarted';
-
-const Basics = createDrawerNavigator({
-  GetStarted: {
-    screen: GetStarted,
-    navigationOptions: () => ({
-      title: '01-Get Started'
-    })
-  }
-});
+import { APIs } from '../screens/APIs';
+import { Basics } from '../screens/Basics';
+import { Components } from '../screens/Components';
+import { Guides } from '../screens/Guides';
+import { createBottomTabNavigator } from 'react-navigation';
 
 export default createBottomTabNavigator({
   Basics: {
@@ -20,5 +10,23 @@ export default createBottomTabNavigator({
     navigationOptions: () => ({
       tabBarLabel: 'Basic'
     })
+  },
+  Guides: {
+    screen: Guides,
+    navigationOptions: {
+      tabBarLabel: 'Guides'
+    }
+  },
+  Components: {
+    screen: Components,
+    navigationOptions: {
+      tarBarLabel: 'Components'
+    }
+  },
+  APIs: {
+    screen: APIs,
+    navigationOptions: {
+      tarBarLabel: 'APIs'
+    }
   }
 });

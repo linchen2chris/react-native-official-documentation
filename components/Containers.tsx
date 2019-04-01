@@ -3,8 +3,6 @@ import React from 'react';
 
 export const PageContainer = ({ children }) => (
   <SafeAreaView>
-    <ScrollView style={{ padding: 20, marginBottom: 30 }}>
-      {children}
-    </ScrollView>
+    <ScrollView style={{ padding: 20 }}>{children}</ScrollView>
   </SafeAreaView>
 );

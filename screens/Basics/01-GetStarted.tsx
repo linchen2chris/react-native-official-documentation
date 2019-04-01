@@ -143,23 +143,27 @@ const GetStarted = () => {
       </P>
       <H2>Modifying your app</H2>
       <P>Now that you have successfully run the app, let's modify it.</P>
-      <FlatList
-        data={[
-          {
-            key:
-              'Open App.js in your text editor of choice and edit some lines.'
-          },
-          {
-            key:
-              'Hit ⌘R in your iOS Simulator to reload the app and see your changes!'
-          }
-        ]}
-        renderItem={({ item }) => <Text>{item.key}</Text>}
-      />
+      <P>* Open App.js in your text editor of choice and edit some lines.</P>
+      <P>
+        * Hit ⌘R in your iOS Simulator to reload the app and see your changes!
+      </P>
       <H2>That's it!</H2>
       <P>
         Congratulations! You've successfully run and modified your first React
         Native app.
+      </P>
+      <H1>Now what?</H1>
+      <P>
+        Turn on Live Reload in the Developer Menu. Your app will now reload
+        automatically whenever you save any changes!
+      </P>
+      <P>
+        If you want to add this new React Native code to an existing
+        application, check out the Integration guide.
+      </P>
+      <P>
+        If you're curious to learn more about React Native, continue on to the
+        Tutorial.
       </P>
     </PageContainer>
   );
